@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PasswordVerifyTest {
     @org.junit.jupiter.api.Test
     void verifyPassword() {
-        assertEquals(, PasswordVerify.verifyPassword(""));
+        assertEquals(0, PasswordVerify.verifyPassword(""));
     }
 
 }
