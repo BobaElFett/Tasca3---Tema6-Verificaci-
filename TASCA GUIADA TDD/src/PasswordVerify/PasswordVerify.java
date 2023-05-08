@@ -20,6 +20,8 @@ public class PasswordVerify {
             if (contador >= 2) {
                 return true;
             }
+        } else {
+
         }
 
         return false;
