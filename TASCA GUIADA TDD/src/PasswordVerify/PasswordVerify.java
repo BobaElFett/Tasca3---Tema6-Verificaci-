@@ -6,7 +6,7 @@ public class PasswordVerify {
         // 8 caracteres
         // 2 numeros
         
-        if (password.length() >= 8) {
+        if (contrasena.length() >= 8) {
             int contadornum = 0;
             int capSignos = 0;
             int capCount = 0;
