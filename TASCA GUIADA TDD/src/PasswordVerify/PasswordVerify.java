@@ -2,7 +2,7 @@ package PasswordVerify;
 
 public class PasswordVerify {
     
-    public static boolean verifyPassword(String password) {
+    public static boolean verifyPassword(String contrasena) {
         // 8 caracteres
         // 2 numeros
         
@@ -10,12 +10,12 @@ public class PasswordVerify {
             int contadornum = 0;
             int capSignos = 0;
             int capCount = 0;
-            for (int i = 0; i < password.length(); i++) {
-                if (Character.isDigit(password.charAt(i))) {
+            for (int i = 0; i < contrasena.length(); i++) {
+                if (Character.isDigit(contrasena.charAt(i))) {
                     contadornum++;
-                } else if (((Password.charAt(i) > 32 && Password.charAt(i) < 48) || (Password.charAt(i) > 63 && Password.charAt(i) < 65)) {
+                } else if (((contrasena.charAt(i) > 32 && contrasena.charAt(i) < 48) || (contrasena.charAt(i) > 63 && contrasena.charAt(i) < 65)) {
                     capSignos++;
-                } else if ((Password.charAt(i) > 64 && Password.charAt(i) < 91)) {
+                } else if ((contrasena.charAt(i) > 64 && contrasena.charAt(i) < 91)) {
                     capCount++;
                 }
             }
