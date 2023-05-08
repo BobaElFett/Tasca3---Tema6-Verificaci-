@@ -24,4 +24,8 @@ public class Password {
     public void setValid(Boolean valid) {
         this.valid = valid;
     }
+    
+    public boolean getValid() {
+        return this.valid;
+    }
 }

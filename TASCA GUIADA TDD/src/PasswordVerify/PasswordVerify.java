@@ -2,7 +2,10 @@ package PasswordVerify;
 
 public class PasswordVerify {
     
-    public static Password verifyPassword(String contrasena) {
+    public PasswordVerify() {
+    }
+    
+    public Password verifyPassword(String contrasena) {
 
         Password pass = new Password();
 
@@ -25,11 +28,11 @@ public class PasswordVerify {
             pass.actualizarError("La contrasenya ha de contenir almenys 2 números");
         }
 
-        if (capCount >= 1) {
+        if (capCount < 1) {
             pass.actualizarError("La contrasenya ha de contenir almenys una lletra majúscula");
         }
 
-        if (capSignos >= 1) {
+        if (capSignos < 1) {
             pass.actualizarError("La contrasenya ha de contenir almenys un caràcter especial");
         }
 
