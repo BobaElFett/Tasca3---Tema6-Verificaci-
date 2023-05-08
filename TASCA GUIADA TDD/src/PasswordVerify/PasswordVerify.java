@@ -4,12 +4,13 @@ public class PasswordVerify {
     
     public PasswordVerify() {
     }
-    
+
     public Password verifyPassword(String contrasena) {
 
-        Password pass = new Password();
+        Password pass = new Password(contrasena);
 
         int contadornum = 0, capSignos = 0, capCount = 0;
+
         if (contrasena.length() < 8) {
             pass.actualizarError("La contrasenya ha de tenir almenys 8 caràcters");
         }

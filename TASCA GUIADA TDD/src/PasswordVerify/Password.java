@@ -1,10 +1,12 @@
 package PasswordVerify;
 
 public class Password {
+    private String contrasena;
     private String error;
     private Boolean valid;
 
-    public Password() {
+    public Password(String contrasena) {
+        this.contrasena = contrasena;
         this.error = "";
         this.valid = false;
     }
