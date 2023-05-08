@@ -13,7 +13,7 @@ public class PasswordVerify {
             for (int i = 0; i < contrasena.length(); i++) {
                 if (Character.isDigit(contrasena.charAt(i))) {
                     contadornum++;
-                } else if (((contrasena.charAt(i) > 32 && contrasena.charAt(i) < 48) || (contrasena.charAt(i) > 63 && contrasena.charAt(i) < 65)) {
+                } else if (((contrasena.charAt(i) > 32 && contrasena.charAt(i) < 48) || (contrasena.charAt(i) > 63 && contrasena.charAt(i) < 65))) {
                     capSignos++;
                 } else if ((contrasena.charAt(i) > 64 && contrasena.charAt(i) < 91)) {
                     capCount++;
