@@ -158,6 +158,4 @@ class PasswordVerifyTest {
         assertEquals("",
                 pass.verifyPassword("#P4blit0cl4v0uncl4vit0#").getError());
     }
-    
-    
 }
