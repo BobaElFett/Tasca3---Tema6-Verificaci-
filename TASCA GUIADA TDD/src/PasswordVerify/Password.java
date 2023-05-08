@@ -28,4 +28,12 @@ public class Password {
     public boolean getValid() {
         return this.valid;
     }
+
+    @Override
+    public String toString() {
+        return "Password{" +
+                "error='" + error + '\'' +
+                ", valid=" + valid +
+                '}';
+    }
 }
