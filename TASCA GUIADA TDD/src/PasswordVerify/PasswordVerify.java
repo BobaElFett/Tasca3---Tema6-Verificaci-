@@ -4,7 +4,6 @@ public class PasswordVerify {
     
     public PasswordVerify() {
     }
-
     public Password verifyPassword(String contrasena) {
 
         Password pass = new Password(contrasena);
